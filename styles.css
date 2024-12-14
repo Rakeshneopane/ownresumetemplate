@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Quicksand:wght@300..700&display=swap');
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+:root{
+    --blue: #0E2954;
+    --lightblue:#1545a5;
+    --green:#22707c;
+    --lightgreen: #5b8e85;
+    --white: #f0f8ff;
+    --buttonbgcolor: rgba(0, 86, 179,0);
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--white);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ul{
+    list-style-type: none; 
+}
+a{
+    text-decoration: none;
+    margin: 0 15px;
+}
+.navbar,.footer{
+    padding: 24px 0;
+    background-color: var(--blue);    
+}
+.navbarul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}    
+.navbarul li{
+    margin: 0 10px;
+    
+}
+#myself{
+    padding: 18px 0;
+}
+.image{
+    margin: 18px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--lightgreen);
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+.module{
+    display: grid;
+    grid-template-areas: 
+    "left right"
+    "left right"
+    "left right"
+    "left right"
+    ;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto; 
+    padding: 30px 70px;
+    background-color: var(--lightgreen);
+}
+.module > .left{
+    background-color: var(--green);
+}
+.module > .right{
+    background-color: var(--lightblue);
+}
+div{
+    padding: 10px;
+}
+div > *{
+    margin: 10px 0;
+}
+hr{
+    background-color: var(--white);
+    height: 4px;
+}
+p,h2,h3,h4{
+    padding-left: 40px;
+    padding-bottom: 5px;
+}
+section>div>a{
+    padding-left: 40px;
+    padding-bottom: 5px;
+}
+.phoneicon{
+    height: 16px;
+    width: 16px;
+}
+.navigationbutton{
+    background: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.4;
+    background-color: var(--buttonbgcolor);
+}
+#scrollToTopBtn:hover {
+    background-color: var(--buttonbgcolor);
+    opacity: 1;
+    }
+.footer{
+    display: flex;
+    justify-content: center;
+}
